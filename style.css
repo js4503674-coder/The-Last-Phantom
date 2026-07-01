@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #181818;
+    position: sticky;
+    top: 0;
+}
+
+#search {
+    width: 40%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* MAIN LAYOUT */
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* LEFT VIDEO PLAYER */
+.player-section {
+    flex: 2;
+}
+
+#player {
+    width: 100%;
+    max-height: 70vh;
+    background: black;
+    border-radius: 10px;
+}
+
+#title {
+    margin-top: 10px;
+}
+
+.creator-text {
+    font-size: 12px;
+    color: #888;
+    margin-top: -8px;
+}
+
+/* RIGHT SIDE LIST */
+.sidebar {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* VIDEO LIST */
+#grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* CARD (YouTube style) */
+.card {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 6px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background: #1f1f1f;
+}
+
+.card img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* TEXT INSIDE CARD */
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 13px;
+    margin: 0;
+    color: #ddd;
+}
+
+.card-creator {
+    font-size: 11px;
+    color: #888;
+    margin-top: 2px;
+}

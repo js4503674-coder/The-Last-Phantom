@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LetsVideo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h2 class="logo">LetsVideo</h2>
+    <input type="text" id="search" placeholder="Search videos..." />
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+    <!-- LEFT: PLAYER -->
+    <div class="player-section">
+        <video id="player" controls></video>
+
+        <h3 id="title">Select a video</h3>
+        <p id="creator" class="creator-text"></p>
+    </div>
+
+    <!-- RIGHT: LIST -->
+    <div class="sidebar">
+        <h3 id="sectionTitle">Home</h3>
+        <div id="grid"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
