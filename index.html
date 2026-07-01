@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LetsVideo</title>
+    <title>My Video Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- TOP BAR -->
 <div class="topbar">
-    <h2 class="logo">LetsVideo</h2>
+    <h2 class="logo">MyVideos</h2>
     <input type="text" id="search" placeholder="Search videos..." />
 </div>
 
@@ -17,7 +17,9 @@
 
     <!-- LEFT: PLAYER -->
     <div class="player-section">
-        <video id="player" controls></video>
+
+        <!-- FIXED: iframe for Streamable -->
+        <iframe id="player" frameborder="0" allowfullscreen></iframe>
 
         <h3 id="title">Select a video</h3>
         <p id="creator" class="creator-text"></p>
