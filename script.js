@@ -7,7 +7,7 @@ const grid = document.getElementById("grid");
 const search = document.getElementById("search");
 const sectionTitle = document.getElementById("sectionTitle");
 
-// LOAD JSON DATA
+// LOAD JSON
 fetch("videos.json")
   .then(res => res.json())
   .then(data => {
@@ -20,19 +20,18 @@ fetch("videos.json")
     }
   });
 
-// LOAD VIDEO INTO PLAYER
+// LOAD VIDEO (STREAMABLE EMBED)
 function loadVideo(video) {
-    player.src = video.video;
+    player.src = video.video; // MUST be /e/ link
+
     title.innerText = video.name;
 
     creatorText.innerText = video.creator
         ? `Created by ${video.creator}`
         : "";
-
-    player.play();
 }
 
-// RENDER VIDEO LIST (HOME + SEARCH)
+// RENDER LIST (HOME + SEARCH)
 function renderVideos(videos) {
     grid.innerHTML = "";
 
