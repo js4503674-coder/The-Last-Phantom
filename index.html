@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Video Site</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyVideos</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-    <h2 class="logo">MyVideos</h2>
-    <input type="text" id="search" placeholder="Search videos..." />
-</div>
+<!-- HEADER -->
+<header>
+  <h1>MyVideos</h1>
+  <input type="text" id="search" placeholder="Search videos...">
+</header>
 
 <!-- MAIN LAYOUT -->
-<div class="layout">
+<div class="main">
 
-    <!-- LEFT: PLAYER -->
-    <div class="player-section">
+  <!-- LEFT SIDE (VIDEO PLAYER) -->
+  <div class="left">
 
-        <!-- FIXED: iframe for Streamable -->
-        <iframe id="player" frameborder="0" allowfullscreen></iframe>
-
-        <h3 id="title">Select a video</h3>
-        <p id="creator" class="creator-text"></p>
+    <div class="video-container">
+      <video id="player" controls></video>
     </div>
 
-    <!-- RIGHT: LIST -->
-    <div class="sidebar">
-        <h3 id="sectionTitle">Home</h3>
-        <div id="grid"></div>
-    </div>
+    <div class="video-title" id="title">Select a video</div>
+    <div class="video-creator" id="creator"> </div>
 
+  </div>
+
+  <!-- RIGHT SIDE (SIDEBAR VIDEOS) -->
+  <div class="right" id="sidebar">
+    <!-- JS will insert videos here -->
+  </div>
+
+</div>
+
+<!-- OPTIONAL HOME GRID (hidden or used for homepage view later) -->
+<div class="grid" id="homeGrid" style="display:none;">
+  <!-- JS can populate this -->
 </div>
 
 <script src="script.js"></script>
